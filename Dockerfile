@@ -5,7 +5,7 @@ FROM nginx:alpine
 RUN apk update && apk add --no-cache git
 
 # Clone the GitHub repository
-RUN git clone https://github.com/pushpak838/pushpak-reolv.ai-jenkins.git /usr/share/nginx/html
+RUN index.html /usr/share/nginx/html
 
 # Expose the default HTTP port used by nginx
 EXPOSE 80
